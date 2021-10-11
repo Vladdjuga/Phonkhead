@@ -7,7 +7,10 @@ public class Character : MonoBehaviour
     public Rigidbody2D rb;
     public Vector2 moveVector;
     public Animator anim;
-    float speed = 10f;
+    float speed = 20f;
+    float jump_v = 50f;
+    bool is_jumping = false;
+    int jump_count = 0;
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -16,6 +19,17 @@ public class Character : MonoBehaviour
     void Update()
     {
         walk();
+        if (Input.GetKeyDown(KeyCode.Space) && (!is_jumping||jump_count<2))
+        {
+            jump_count++;
+            if (jump_count == 2)
+            {
+                anim.SetBool("is_double_jump", true);
+            }
+            is_jumping = true;
+            anim.SetBool("is_jumping", true);
+            jump();
+        }
     }
 
     private void walk()
@@ -34,5 +48,19 @@ public class Character : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 0, 0);
         else if (moveVector.x > 0)
             transform.eulerAngles = new Vector3(0, 180, 0);
+    }
+    private void jump()
+    {
+        rb.velocity = Vector2.up * jump_v;
+    }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Floor")
+        {
+            jump_count=0;
+            is_jumping = false;
+            anim.SetBool("is_jumping", false);
+            anim.SetBool("is_double_jump", false);
+        }
     }
 }
