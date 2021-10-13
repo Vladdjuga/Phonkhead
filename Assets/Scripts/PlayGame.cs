@@ -11,7 +11,6 @@ public class PlayGame : MonoBehaviour
 	{
 
 	}
-
 	void OnMouseUpAsButton()
 	{
 		Debug.Log("You have clicked the button!");
