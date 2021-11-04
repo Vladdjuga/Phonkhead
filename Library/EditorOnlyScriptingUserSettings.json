@@ -1,1 +1,1 @@
-{"m_ScriptingRuntimeVersion":1,"m_DefineSymbols":[],"m_AllowUnsafeCode":false}
+{"m_ScriptingRuntimeVersion":1,"m_DefineSymbols":[{"first":0,"second":"PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER"}],"m_AllowUnsafeCode":false}

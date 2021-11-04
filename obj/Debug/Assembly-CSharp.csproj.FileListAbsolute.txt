@@ -1,0 +1,2 @@
+C:\Users\Vlad\Phonkhead1\Phonkhead\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+C:\Users\Vlad\Phonkhead1\Phonkhead\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

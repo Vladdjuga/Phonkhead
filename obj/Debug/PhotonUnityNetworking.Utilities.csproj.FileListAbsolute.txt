@@ -1,0 +1,2 @@
+C:\Users\Vlad\Phonkhead1\Phonkhead\obj\Debug\PhotonUnityNetworking.Utilities.csproj.AssemblyReference.cache
+C:\Users\Vlad\Phonkhead1\Phonkhead\obj\Debug\PhotonUnityNetworking.Utilities.csproj.CoreCompileInputs.cache

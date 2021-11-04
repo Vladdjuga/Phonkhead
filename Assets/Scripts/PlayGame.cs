@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayGame : MonoBehaviour
@@ -14,6 +15,6 @@ public class PlayGame : MonoBehaviour
 	void OnMouseUpAsButton()
 	{
 		Debug.Log("You have clicked the button!");
-		Application.LoadLevel("Game");
+		SceneManager.LoadScene("Loading");
 	}
 }

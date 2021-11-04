@@ -5,11 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - Water
+  - Drop
+  - Bullet
+  - Tiny
+  - Lava
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
@@ -41,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 841296371
     locked: 0
