@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 430008254530585752}
   - component: {fileID: 430008254530585759}
-  - component: {fileID: 430008254530585758}
+  - component: {fileID: 2852123418126186858}
   - component: {fileID: 430008254530585757}
   - component: {fileID: 430008254530585756}
   - component: {fileID: 430008254530585753}
-  - component: {fileID: 2362702908832744276}
-  - component: {fileID: -4103370814117501549}
+  - component: {fileID: 4293524776888686036}
+  - component: {fileID: 6049780048552771411}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430008254530585731}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.701, y: 155.109, z: -2.1099854}
+  m_LocalPosition: {x: 50, y: 77.5, z: -2.1099854}
   m_LocalScale: {x: 6, y: 6, z: 0.3021464}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &430008254530585758
+--- !u!61 &2852123418126186858
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,8 +100,8 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: -0.03}
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.049}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -110,9 +110,9 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 1
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.25}
+  m_Size: {x: 0.16, y: 0.22}
   m_EdgeRadius: 0
 --- !u!50 &430008254530585757
 Rigidbody2D:
@@ -133,7 +133,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &430008254530585756
 Animator:
@@ -171,7 +171,9 @@ MonoBehaviour:
   anim: {fileID: 430008254530585756}
   jump_audio: {fileID: 5912940866165119412, guid: 73db35f1843ea1a4a91ddc2baa10727e,
     type: 3}
---- !u!114 &2362702908832744276
+  inventory: {fileID: 11400000, guid: cb7cbe175dede3b49ae0d33a5d92ea61, type: 2}
+  atlas: {fileID: 11400000, guid: 6a1967975f13ba841a91bf34d6887dc7, type: 2}
+--- !u!114 &4293524776888686036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,11 +192,11 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: -4103370814117501549}
+  - {fileID: 6049780048552771411}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &-4103370814117501549
+--- !u!114 &6049780048552771411
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,27 +205,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 430008254530585731}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PositionModel:
-    SynchronizeEnabled: 1
-    TeleportEnabled: 1
-    TeleportIfDistanceGreaterThan: 3
-    InterpolateOption: 2
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 1
-    ExtrapolateOption: 0
-    ExtrapolateSpeed: 1
-    ExtrapolateIncludingRoundTripTime: 1
-    ExtrapolateNumberOfStoredPositions: 1
-  m_RotationModel:
-    SynchronizeEnabled: 0
-    InterpolateOption: 1
-    InterpolateRotateTowardsSpeed: 180
-    InterpolateLerpSpeed: 5
-  m_ScaleModel:
-    SynchronizeEnabled: 0
-    InterpolateOption: 0
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 0
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1

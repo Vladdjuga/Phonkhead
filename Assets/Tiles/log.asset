@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842c67766d94d5245aaf5b03c180d0fb, type: 3}
   m_Name: log
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 7fe6b08f546711a48a92e9f4aa5718c9, type: 3}
-  name: log
+  sprite: {fileID: 21300000, guid: 9e2444537437e224bbbaf17e348cdb33, type: 3}
+  name: trunk_side

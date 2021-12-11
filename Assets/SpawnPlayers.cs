@@ -11,9 +11,9 @@ public class SpawnPlayers : MonoBehaviour
 
     void Start()
     {
-        Vector3 randomPosition = new Vector3(53.6f,104.6f,-2);
-        GameObject pl= PhotonNetwork.Instantiate(player.name, randomPosition, Quaternion.identity);
-        playerTransform.player = pl;
+        //Vector3 randomPosition = new Vector3(53.6f,104.6f,-2);
+        //GameObject pl= PhotonNetwork.Instantiate(player.name, randomPosition, Quaternion.identity);
+        //playerTransform.player = pl;
     }
     // Update is called once per frame
     void Update()

@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayGame : MonoBehaviour
 {
-	public Button yourButton;
 
 	void Start()
 	{
+		Debug.Log("Start!");
 
 	}
-	void OnMouseUpAsButton()
+	public void OnMouseDown()
 	{
 		Debug.Log("You have clicked the button!");
 		SceneManager.LoadScene("Loading");

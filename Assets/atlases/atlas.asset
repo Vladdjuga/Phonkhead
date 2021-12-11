@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 102292807778f0c43b9c2e38a869fac2, type: 3}
+  m_Name: atlas
+  m_EditorClassIdentifier: 
+  earth: {fileID: 11400000, guid: 782459dfe95d26f40a9f09d994b1e4d1, type: 2}
+  stone: {fileID: 11400000, guid: 68d2fad9ef455ae43bf3efef0799f86a, type: 2}
+  grass: {fileID: 11400000, guid: d1f9a7879597b0248963d92f5ffb7358, type: 2}
+  gravel: {fileID: 11400000, guid: 23d4bf686d52ef4409d323ef143bae46, type: 2}
+  air: {fileID: 11400000, guid: 5a29e8522c072624a9ac0279800871db, type: 2}
+  air_side: {fileID: 11400000, guid: eadaf53de32701d4094cced9a7f3405a, type: 2}
+  air_sideClouds: {fileID: 11400000, guid: 33096e82173e8444198cf4f0e6054e25, type: 2}
+  air_sideHills: {fileID: 11400000, guid: 9980e19e578395e49953141ddedfae29, type: 2}
+  air_top: {fileID: 11400000, guid: 8989b215da956874a98b2b62ba7c1d87, type: 2}
+  water: {fileID: 11400000, guid: de4774ff36beb5c42a7ffe8e65cf1910, type: 2}
+  log: {fileID: 11400000, guid: f498e027b7a5cb948a502dd25af3571e, type: 2}
+  leaf: {fileID: 11400000, guid: 7c7d6bdf2660a8141afce03704cbb0a2, type: 2}
+  coal: {fileID: 11400000, guid: 2897790ea2a6a1749a1054174f92a701, type: 2}
+  gold: {fileID: 11400000, guid: 5ff053256521b7c47807f84eebac55c8, type: 2}
+  iron: {fileID: 11400000, guid: 851bfcc942962d34c800fb51b3fd984b, type: 2}
+  diamond: {fileID: 11400000, guid: 638446cd9cade114dba1b13fe836c0fd, type: 2}
+  copper: {fileID: 11400000, guid: daf070f6020e95746b404bbd04af5124, type: 2}
+  snow: {fileID: 11400000, guid: 8d2e52813ad6c2641a9de045998558f7, type: 2}
+  sand: {fileID: 11400000, guid: 5c0f468e29cb1a940972d075d6c85ed7, type: 2}
+  torch_prefab: {fileID: 2338703378248782847, guid: 9b222ead2780f5e46ba955ed97789072,
+    type: 3}
+  tiny_sprites:
+  - {fileID: 11400000, guid: 496d2a2c0f62e7b47849b9ce7c6ab274, type: 2}
+  - {fileID: 11400000, guid: 77ede59023a9bd545a9322a9f2f83c0e, type: 2}
+  - {fileID: 11400000, guid: 5655c8bd1dd34514f9dd27e8d40d9e46, type: 2}
+  - {fileID: 11400000, guid: 858656b558c6f344a8c083bb7d9f65f1, type: 2}
+  - {fileID: 11400000, guid: 3f1a1442f4998774fa0aaab120a2e96a, type: 2}
+  inventoryItems:
+  - {fileID: 11400000, guid: 3d11ceafec7d22440a0844a96cd79cf9, type: 2}
+  - {fileID: 11400000, guid: 213214dd8aebded48802def42246d7e2, type: 2}
+  - {fileID: 11400000, guid: 213214dd8aebded48802def42246d7e2, type: 2}
+  - {fileID: 11400000, guid: d5a6045b661cba042ae85913ed4e1300, type: 2}
+  - {fileID: 11400000, guid: f88522e41f803ac449e70b6ee61b3490, type: 2}
+  - {fileID: 11400000, guid: 8c7ee7a6cd7f2d74c9188a694343367c, type: 2}
+  - {fileID: 11400000, guid: 1d0206bad64e712498bdcc3b18e9b49b, type: 2}
+  - {fileID: 11400000, guid: 8f70e793be8d97a45a4d8d4dc22b76c2, type: 2}
+  - {fileID: 11400000, guid: f88522e41f803ac449e70b6ee61b3490, type: 2}
+  - {fileID: 11400000, guid: 0e5d03c8f8e749648aa3206a7130c67f, type: 2}
+  - {fileID: 11400000, guid: 8c0d38eb9d84c8247b3e46d8a0b9085b, type: 2}
+  - {fileID: 11400000, guid: 7e4e4efae21bd914d9f142844041babf, type: 2}
+  - {fileID: 11400000, guid: b10d3f18c435ccb409bc7b53540fe2d3, type: 2}
+  - {fileID: 11400000, guid: 796cb28f84cca494a9fc0a0383a37033, type: 2}
+  - {fileID: 11400000, guid: 4a627c9a00411824b82fa6d06f87b0ac, type: 2}
+  - {fileID: 11400000, guid: 5ad8ecfd66283d640ad7686ce7d427db, type: 2}

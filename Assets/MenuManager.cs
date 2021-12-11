@@ -12,9 +12,10 @@ public class MenuManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     public void CreateRoom()
     {
-        RoomOptions roomOpt = new RoomOptions();
+        Photon.Realtime.RoomOptions roomOpt = new Photon.Realtime.RoomOptions();
         roomOpt.MaxPlayers = 4;
-        PhotonNetwork.CreateRoom(create.text, roomOpt);
+        PhotonNetwork.CreateRoom(create.text,roomOptions:roomOpt);
+        PhotonNetwork.AutomaticallySyncScene = true;
     }
     public void JoinRoom()
     {
@@ -22,6 +23,7 @@ public class MenuManager : MonoBehaviourPunCallbacks
     }
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.LoadLevel("Game");
+        //if(PhotonNetwork.IsMasterClient)
+            PhotonNetwork.LoadLevel("Game");
     }
 }

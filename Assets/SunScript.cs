@@ -30,111 +30,111 @@ public class SunScript : MonoBehaviour
             case 0:
                 if (r > evening.r)
                 {
-                    r -= 0.001f;
+                    r -= 0.0001f;
                 }
                 else if(r<evening.r)
                 {
-                    r += 0.001f;
+                    r += 0.0001f;
                 }
                 if (g > evening.g)
                 {
-                    g -= 0.001f;
+                    g -= 0.0001f;
                 }
                 else if (g < evening.g)
                 {
-                    g += 0.001f;
+                    g += 0.0001f;
                 }
                 if (b > evening.b)
                 {
-                    b -= 0.001f;
+                    b -= 0.0001f;
                 }
                 else if (b < evening.b)
                 {
-                    b += 0.001f;
+                    b += 0.0001f;
                 }
                 break;
 
             case 1:
                 if (r > day.r)
                 {
-                    r -= 0.001f;
+                    r -= 0.0001f;
                 }
                 else if (r < day.r)
                 {
-                    r += 0.001f;
+                    r += 0.0001f;
                 }
                 if (g > day.g)
                 {
-                    g -= 0.001f;
+                    g -= 0.0001f;
                 }
                 else if (g < day.g)
                 {
-                    g += 0.001f;
+                    g += 0.0001f;
                 }
                 if (b > day.b)
                 {
-                    b -= 0.001f;
+                    b -= 0.0001f;
                 }
                 else if (b < day.b)
                 {
-                    b += 0.001f;
+                    b += 0.0001f;
                 }
                 break;
             case 2:
                 if (r > evening.r)
                 {
-                    r -= 0.001f;
+                    r -= 0.0001f;
                 }
                 else if (r < evening.r)
                 {
-                    r += 0.001f;
+                    r += 0.0001f;
                 }
                 if (g > evening.g)
                 {
-                    g -= 0.001f;
+                    g -= 0.0001f;
                 }
                 else if (g < evening.g)
                 {
-                    g += 0.001f;
+                    g += 0.0001f;
                 }
                 if (b > evening.b)
                 {
-                    b -= 0.001f;
+                    b -= 0.0001f;
                 }
                 else if (b < evening.b)
                 {
-                    b += 0.001f;
+                    b += 0.0001f;
                 }
                 break;
             case 3:
                 if (r > night.r)
                 {
-                    r -= 0.001f;
+                    r -= 0.0001f;
                 }
                 else if (r < night.r)
                 {
-                    r += 0.001f;
+                    r += 0.0001f;
                 }
                 if (g > night.g)
                 {
-                    g -= 0.001f;
+                    g -= 0.0001f;
                 }
                 else if (g < night.g)
                 {
-                    g += 0.001f;
+                    g += 0.0001f;
                 }
                 if (b > night.b)
                 {
-                    b -= 0.001f;
+                    b -= 0.0001f;
                 }
                 else if (b < night.b)
                 {
-                    b += 0.001f;
+                    b += 0.0001f;
                 }
                 break;
         }
 
-        SUN.color = new Color(r,g,b, 0.5f);
+        SUN.color = new Color(r,g,b, 1f);
 
         if (SUN.intensity >= 0.7)
             curr_time = 1;

@@ -10,15 +10,16 @@ public class CameraController : MonoBehaviour
 
     public Transform player_transform;
     private void Start()
-    {
+    {   
+
     }
 
     void Update()
     {
-        Vector3 pos = GetComponent<Transform>().position;
-        pos.x = Mathf.Lerp(pos.x, player_transform.position.x,smoothTime);
-        pos.y = player_transform.position.y;
-        pos.z = transform.position.z;
-        GetComponent<Transform>().position = pos;
+            Vector3 pos = GetComponent<Transform>().position;
+            pos.x = Mathf.Lerp(pos.x, player_transform.position.x, smoothTime);
+            pos.y = player_transform.position.y;
+            pos.z = transform.position.z;
+            GetComponent<Transform>().position = pos;
     }
 }
