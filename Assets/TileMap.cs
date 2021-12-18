@@ -33,7 +33,7 @@ public class TileMap
     }
     public void addTile(string sprite_name,bool is_breakable,bool is_bg,int def, Vector3 position,int x ,int y)
     {
-        TileObject tileObject = new TileObject();
+        TileObject tileObject = TileObject.CreateInstance<TileObject>();
         tileObject.sprite = sprite_name;
         tileObject.is_breakable = is_breakable;
         tileObject.is_bg = is_bg;

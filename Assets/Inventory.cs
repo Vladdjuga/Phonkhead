@@ -26,12 +26,20 @@ public class Inventory : ScriptableObject
                 }
                 else if (items.Count <= 8)
                 {
-                    items.Add(new ItemDef(inventory_examp.sprite, inventory_examp.name, 1));
+                    ItemDef item=ItemDef.CreateInstance<ItemDef>();
+                    item.sprite = inventory_examp.sprite;
+                    item.name = inventory_examp.name;
+                    item.count = 1;
+                    items.Add(item);
                 }
             }
             else if (items.Count <= 8)
             {
-                items.Add(new ItemDef(inventory_examp.sprite, inventory_examp.name, 1));
+                ItemDef item = ItemDef.CreateInstance<ItemDef>();
+                item.sprite = inventory_examp.sprite;
+                item.name = inventory_examp.name;
+                item.count = 1;
+                items.Add(item);
             }
         }
     }
@@ -61,11 +69,11 @@ public class Inventory : ScriptableObject
             if (tiles.inventoryItems.Count > index && index >= 0)
             {
                 var inventory_examp = tiles.inventoryItems.Find((el) => el.name == items[index].name);
-                if (inventory_examp.is_stackable && items[index].count > 1)
+                if (inventory_examp.is_stackable && items[index].count > 0)
                 {
                     items[index].count--;
                 }
-                else if (items.Count <= 1)
+                if (items.Count <= 1)
                 {
                     items.RemoveAt(index);
                 }

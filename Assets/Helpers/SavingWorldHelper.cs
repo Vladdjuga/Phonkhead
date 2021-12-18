@@ -15,6 +15,10 @@ namespace Assets.Helpers
         {
             string assetsFolderPath = Application.dataPath;
             string levelFolder = assetsFolderPath + "/Resources/worlds/";
+            if (!Directory.Exists(levelFolder))
+            {
+                Directory.CreateDirectory(levelFolder);
+            }
             string world = levelFolder + world_name + ".voxelwbf";
             using (var file = File.Open(world, FileMode.OpenOrCreate))
             {

@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c086f11b3ea02da43b220e6b97f006fb, type: 3}
   m_Name: player_inventory
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tiles: {fileID: 11400000, guid: 6a1967975f13ba841a91bf34d6887dc7, type: 2}

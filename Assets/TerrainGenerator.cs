@@ -146,7 +146,7 @@ public class TerrainGenerator : MonoBehaviour
                     {
                         GameObject go = targetObject.transform.gameObject;
                         Destroy(go);
-                        CreateDrop(go.GetComponent<SpriteRenderer>().sprite, go.transform.position.x, go.transform.position.y, "Drop", go.transform.parent);
+                        CreateDrop(go.GetComponent<SpriteRenderer>().sprite, go.transform.position.x, go.transform.position.y, "Drop", go.transform.parent,go.name);
                         tileMap.tiles[(int)mousePosition.x][(int)mousePosition.y] = null;
                     }
                 }
@@ -172,9 +172,11 @@ public class TerrainGenerator : MonoBehaviour
                     {
                         string block_name = inventory.inventory.items[inventory.selected].name;
                         TileDef tile = tilesList.GetTileByName(block_name);
-                        inventory.inventory.RemoveSingleItemAt(inventory.selected);
-                        //CreateTileFrontTriggerLight(tilesList.torch_prefab, go.transform.position.x, go.transform.position.y, "Lava", go.transform.parent);
-                        CreateTileFront(tile.sprite, go.transform.position.x, go.transform.position.y, "Floor", go.transform.parent, tile.name);
+                        if (inventory.inventory.RemoveSingleItemAt(inventory.selected) != 0)
+                        {
+                            //CreateTileFrontTriggerLight(tilesList.torch_prefab, go.transform.position.x, go.transform.position.y, "Lava", go.transform.parent);
+                            CreateTileFront(tile.sprite, go.transform.position.x, go.transform.position.y, "Floor", go.transform.parent, tile.name);
+                        }
                     }
                     catch(Exception ex) { }
                 }
@@ -418,9 +420,9 @@ public class TerrainGenerator : MonoBehaviour
             tileMap.addTile(sprite.name, true, false, 5, newTile.transform.position, (int)x, (int)y);
         }
     }
-    public void CreateDrop(Sprite sprite, float x, float y, string tag, Transform parent)
+    public void CreateDrop(Sprite sprite, float x, float y, string tag, Transform parent, string name_)
     {
-        GameObject newTile = new GameObject(name = sprite.name);
+        GameObject newTile = new GameObject(name = name_);
         newTile.transform.parent = parent;
         newTile.AddComponent<SpriteRenderer>();
         newTile.GetComponent<SpriteRenderer>().sprite = sprite;
